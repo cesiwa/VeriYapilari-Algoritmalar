@@ -1,0 +1,25 @@
+https://www.patika.dev/
+
+
+[22,27,16,2,18,6] -> INSERTION SORT
+
+1) - Yukarıda verilen dizinin sort türüne göre aşamalarını yazınız.
+
+1- [22,27,16,2,18,6] ---> n kadar işlem yapıldı. Tüm sayılar kadar içeride dolaştık.
+2- [2,27,16,22,18,6] ---> (n-1) adet sayı kaldığından (n-1) kadar işlem yapıldı.
+3- [2,6,16,22,18,27] ---> (n-2) kadar işlem yapıldı. Çünkü ilk ikisini zaten sıralamıştık.
+4- [2,6,16,18,22,27] ---> (n-3) kadar işlem yapıldı. Ve sıralama tamamlandı.
+
+$- Big-O gösterimini yazınız: n + (n-1) + (n-2) + (n-3) + 1 = n.(n+1) / 2 = n^2+1/2 = O(n^2)
+---> O(n^2)
+
+$- Time Complexity: Dizi sıralandıktan sonra 18 sayısı hangi case'in kapsamına girer? Yazınız.
+---> 18 sayısı ortaya yakın olması sebebiyle Average case sınıfına girer.
+
+
+
+2) - [7,3,5,8,2,9,4,15,6] dizisinin Selection Sort'a göre ilk 4 adımını yazınız.
+---> İlk adım: [7,3,5,8,2,9,4,15,6] En küçüğü bulmak için n tane işlem yapar.
+---> İkinci adım: [2,3,5,8,7,9,4,15,6] n-2 adet işlem yapar.
+---> Üçüncü adım: [2,3,4,8,7,9,5,15,6] n-3 adet işlem yapar.
+---> Dördüncü adım: [2,3,4,5,7,9,8,15,6] n-4 adet işlem yapar.
